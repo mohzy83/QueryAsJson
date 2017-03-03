@@ -6,7 +6,7 @@ for dotnet core 1.0, 1.1 and .NET Framework 4.0 and higher
 
 
 ## Nuget
-[Nuget Package](https://www.nuget.org/packages/Newtonsoft.Json/10.0.1-beta1)
+[Nuget Package](https://www.nuget.org/packages/QueryAsJson.Core/)
 ```
 PM> Install-Package QueryAsJson.Core
 ```
@@ -82,7 +82,7 @@ Creates something like this
         }
     ],
     "Orders": [{
-            "OrderId": 3,
+            "OrderId": 1,
             "ArticleSummary": "Book 1, Book 2"
         }, {
             "OrderId": 2,
@@ -90,4 +90,13 @@ Creates something like this
         }
     ]
 }]
+```
+
+example database content:
+```sql
+INSERT INTO customer (id, sname, fname, BDAY, ADR_STREET, ADR_CITY) VALUES(1, 'Meyers','Mike','1983-10-31 00:00:00.000', 'Street 1', 'Las Vegas');
+INSERT INTO invoices (id, inv_date, amount, customer_id) VALUES(1, '2015-10-12 15:43:00.000', 500.2, 1);
+INSERT INTO invoices (id, inv_date, amount, customer_id) VALUES(2, '2016-05-09 15:43:00.000', 155.2, 1);
+INSERT INTO orders (id, ordernumber, articles, customer_id) VALUES (1,'O-1001','Book 1, Book 2',1);
+INSERT INTO orders (id, ordernumber, articles, customer_id) VALUES (2,'O-1002','CD Burner, Usb stick 32Gb',1);
 ```
