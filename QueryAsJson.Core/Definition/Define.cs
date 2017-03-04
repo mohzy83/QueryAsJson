@@ -38,7 +38,7 @@ namespace QueryAsJson.Core.Definition
         }
         
         /// <summary>
-        /// Maps a query to a list of objects whice are defined by the template (anonymous object)
+        /// Maps a query to a list of objects which are defined by the template (anonymous object)
         /// </summary>
         /// <param name="query">sql query</param>
         /// <param name="template">anonymous object (child elements)</param>
@@ -50,7 +50,7 @@ namespace QueryAsJson.Core.Definition
             return new QueryDefinition(query, template);
         }
         /// <summary>
-        /// Maps a query to a list of objects whice are defined by the template (anonymous object)
+        /// Maps a query to a list of objects which are defined by the template (anonymous object)
         /// The query result contains nested objects.
         /// </summary>
         /// <param name="idColumn">column which idenifies, idenical objects</param>
