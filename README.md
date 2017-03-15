@@ -13,7 +13,7 @@ PM> Install-Package QueryAsJson.Core
 
 
 ## Description
-This library helps to format query results (from a database) as JSON with arbitrary structure (including nested obejcts).
+This library helps to format query results (from a database) as JSON with arbitrary structure (including nested objects).
 
 Some database engines lack the ability to query tables an return the results directly as JSON (e.g. Oracle). This can be accomplished with QueryAsJson by an intuitve API based on anonymous types. 
 
