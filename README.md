@@ -119,6 +119,28 @@ using (var filestream = new FileStream("output.json", FileMode.CreateNew)) {
 }]
 ```
 
+## Save mapping
+
+It is possible to save the mapping defintion as external json for later use.
+
+```csharp
+var mappingDef = Define.QueryWithNestedResults("id","select * from customer");
+mappingDef.Compile().Save("mapping.json");
+```
+
+## Load mapping
+
+Load a saved mapping from file and execute the mapping.
+
+```csharp
+
+// Load mapping
+var loadedCompiledMapping = MappingFileManager.Load(@"mapping.json");
+// execute it
+var engine = new MappingEngine(connection, loadedCompiledMapping);
+...
+```
+
 ### License
 
 __MIT License__
