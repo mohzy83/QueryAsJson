@@ -1,3 +1,6 @@
+## The Successor of QueryAsJson is [Sql2Json](https://github.com/mohzy83/Sql2Json)
+Visit the new repository for updates.
+
 # QueryAsJson
 
 ## Current Version 0.8.1
